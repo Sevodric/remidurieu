@@ -1,192 +1,245 @@
 :root {
-    --dark-bgcolor: #16161D;
-    --dark-fgcolor: #F0F0F0;
-    --dark-accentcolor: #FFAE6A;
-    --light-accentcolor: #EC7F44;
-    --light-bgcolor: #F0F0F0;
-    --light-fgcolor: #16161D;
+  --dark-bgcolor: #16161D;
+  --dark-fgcolor: #F0F0F0;
+  --dark-accentcolor: #FFAE6A;
+  --light-accentcolor: #EC7F44;
+  --light-bgcolor: #F0F0F0;
+  --light-fgcolor: #16161D;
 }
 
 @font-face {
-    font-family: "Lato Bold";
-    src: url("../webfonts/lato-bold-webfont.woff2") format("woff2"),
-         url("../webfonts/lato-bold-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Lato Bold";
+  src: url("../webfonts/lato-bold-webfont.woff2") format("woff2"),
+  url("../webfonts/lato-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 
 }
 
 @font-face {
-    font-family: "Lato Regular";
-    src: url("../webfonts/lato-regular-webfont.woff2") format("woff2"),
-         url("../webfonts/lato-regular-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Lato Regular";
+  src: url("../webfonts/lato-regular-webfont.woff2") format("woff2"),
+  url("../webfonts/lato-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 
 }
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 p {
-    font-family: "Lato Regular";
+  font-family: "Lato Regular";
 }
 
 a {
-    font-family: "Lato Regular";
-    color: var(--light-accentcolor);
-    text-decoration: none;
+  font-family: "Lato Regular";
+  color: var(--light-accentcolor);
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* --- RESUME --------------------------------------------------------------- */
 
 #resume {
-    height: 100%;
-    width: 100%;
-    color: var(--dark-fgcolor);
-    background-image: url("../img/background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  color: var(--dark-fgcolor);
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #title {
-    font-family: "Lato Bold";
-    font-size: 3em;
+  font-family: "Lato Bold";
+  font-size: 3em;
 }
 
 #subtitle {
-    text-align: center;
+  text-align: center;
 }
 
 #profile-picture {
-    border: 4px solid var(--dark-fgcolor);
-    border-radius: 100%;
-    margin: 20px;
+  border: 4px solid var(--dark-fgcolor);
+  border-radius: 100%;
+  margin: 20px;
 }
 
 /* Makes the empty link transparent as a little black tick appears otherwise */
 #resume a {
-    color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
 }
 
 #resume i {
-    margin: 20px;
-    color: var(--dark-fgcolor);
+  margin: 20px;
+  color: var(--dark-fgcolor);
 }
 
 #resume i:hover {
-    color: var(--dark-accentcolor);
+  color: var(--dark-accentcolor);
 }
 
 /* --- PROJECTS ------------------------------------------------------------- */
 
-#projects {
-    background-color: var(--light-bgcolor);
+@media only screen and (max-width: 775px) {
+  #projects {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--light-bgcolor);
+  }
+
+  #last-project,
+  #others-projects {
+    width: 80%;
+  }
+
+  #last-project {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  #others-projects {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
 }
 
-#last-project,
-#others-projects {
+@media only screen and (min-width: 775px) {
+  #projects {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--light-bgcolor);
+  }
+
+  #last-project,
+  #others-projects {
     width: 33%;
     margin: 50px;
+  }
 }
 
 #projects h2 {
-    font-family: "Lato Bold";
-    border-bottom: 2px solid var(--light-accentcolor);
-    padding: 10px;
-    text-align: center;
+  font-family: "Lato Bold";
+  border-bottom: 2px solid var(--light-accentcolor);
+  padding: 10px;
+  text-align: center;
 }
 
 #last-project .content-container,
 #others-projects .content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
 #last-project p,
 #others-projects .element {
-    margin: 10px;
+  margin: 10px;
 }
 
-/* --- SKILLS AND FORMATION ------------------------------------------------- */
+/* --- FORMATION AND SKILLS ------------------------------------------------- */
 
-#formation-skills {
-    width: 100%;
+@media only screen and (max-width: 775px) {
+  #formation-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--dark-bgcolor);
+    color: var(--dark-fgcolor);
+  }
+
+  #formation,
+  #skills {
+    width: 80%;
+  }
+
+  #formation {
+    margin-top: 25px;
+    margin-bottom: 25px
+  }
+
+  #skills {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 775px) {
+  #formation-skills {
     display: flex;
     justify-content: space-evenly;
     background-color: var(--dark-bgcolor);
     color: var(--dark-fgcolor);
-}
+  }
 
-#formation,
-#skills {
+  #formation,
+  #skills {
     width: 33%;
     margin: 50px;
+  }
 }
 
 #formation h2,
 #skills h2 {
-    font-family: "Lato Bold";
-    border-bottom: 2px solid var(--dark-accentcolor);
-    padding: 10px;
-    text-align: center;
+  font-family: "Lato Bold";
+  border-bottom: 2px solid var(--dark-accentcolor);
+  padding: 10px;
+  text-align: center;
 }
 
 #formation .content-container,
 #tools .content-container,
 #languages .content-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #formation .content-container {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 #formation .element,
 #skills img {
-    text-align: center;
-    margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
 #formation strong {
-    font-family: "Lato Bold";
+  font-family: "Lato Bold";
 }
-
 
 /* --- FOOTER --------------------------------------------------------------- */
 
 footer {
-    width: 100%;
-    height: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--light-bgcolor);
-    color: var(--light-fgcolor);
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-bgcolor);
+  color: var(--light-fgcolor);
 }
 
 footer i {
-    color: var(--light-accentcolor);
+  color: var(--light-accentcolor);
 }
