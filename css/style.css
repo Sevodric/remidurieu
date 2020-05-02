@@ -1,0 +1,212 @@
+:root {
+    --dark-bgcolor: #16161D;
+    --dark-fgcolor: #F0F0F0;
+    --dark-accentcolor: #FFAE6A;
+    --light-accentcolor: #EC7F44;
+    --light-bgcolor: #F0F0F0;
+    --light-fgcolor: #16161D;
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../webfonts/lato-bold-webfont.woff2") format("woff2"),
+         url("../webfonts/lato-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../webfonts/lato-regular-webfont.woff2") format("woff2"),
+         url("../webfonts/lato-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+p {
+    font-family: "Lato Regular";
+}
+
+a {
+    font-family: "Lato Regular";
+    color: var(--light-accentcolor);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- RESUME --------------------------------------------------------------- */
+
+#resume {
+    color: var(--dark-fgcolor);
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume #title {
+    font-size: 3em;
+    font-family: "Lato Bold";
+}
+
+#resume #subtitle {
+    text-align: center;
+}
+
+#resume #profile-picture {
+    border: 4px solid var(--dark-fgcolor);
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* Makes the empty link transparent as a little black tick appears otherwise */
+#resume a {
+    color: rgba(0, 0, 0, 0);
+}
+
+#resume i {
+    margin: 20px;
+    color: var(--dark-fgcolor);
+}
+
+#resume i:hover {
+    color: var(--dark-accentcolor);
+}
+
+/* --- PROJECTS ------------------------------------------------------------- */
+
+#projects {
+    background-color: var(--light-bgcolor);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#last-project, #others-projects {
+    width: 33%;
+    margin: 50px;
+}
+
+#projects h2 {
+    font-family: "Lato Bold";
+    border-bottom: 2px solid var(--light-accentcolor);
+    padding: 10px;
+    text-align: center;
+}
+
+#last-project .content-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#last-project p {
+    margin: 10px;
+}
+
+#others-projects .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#others-projects .element {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+/* --- SKILLS AND FORMATION ------------------------------------------------- */
+
+#skills-formation {
+    background-color: var(--dark-bgcolor);
+    color: var(--dark-fgcolor);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#formation, #skills {
+    width: 33%;
+    margin: 50px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#formation h2, #skills h2 {
+    font-family: "Lato Bold";
+    border-bottom: 2px solid var(--dark-accentcolor);
+    padding: 10px;
+    text-align: center;
+}
+
+#formation .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formation .element {
+    text-align: center;
+    margin: 10px;
+}
+
+#formation strong {
+    font-family: "Lato Bold";
+}
+
+#tools, #languages {
+    width: 100%;
+}
+
+#tools .content-container, #languages .content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+#skills img {
+    margin: 10px;
+}
+
+
+/* --- FOOTER --------------------------------------------------------------- */
+
+footer {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer i {
+    color: var(--light-accentcolor);
+}
