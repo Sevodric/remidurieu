@@ -29,7 +29,8 @@
     margin: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -50,28 +51,28 @@ a:hover {
 /* --- RESUME --------------------------------------------------------------- */
 
 #resume {
+    height: 100%;
+    width: 100%;
     color: var(--dark-fgcolor);
     background-image: url("../img/background.jpg");
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#resume #title {
-    font-size: 3em;
+#title {
     font-family: "Lato Bold";
+    font-size: 3em;
 }
 
-#resume #subtitle {
+#subtitle {
     text-align: center;
 }
 
-#resume #profile-picture {
+#profile-picture {
     border: 4px solid var(--dark-fgcolor);
     border-radius: 100%;
     margin: 20px;
@@ -99,7 +100,8 @@ a:hover {
     justify-content: space-evenly;
 }
 
-#last-project, #others-projects {
+#last-project,
+#others-projects {
     width: 33%;
     margin: 50px;
 }
@@ -111,88 +113,64 @@ a:hover {
     text-align: center;
 }
 
-#last-project .content-container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#last-project p {
-    margin: 10px;
-}
-
+#last-project .content-container,
 #others-projects .content-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    text-align: center;
 }
 
+#last-project p,
 #others-projects .element {
-    width: 100%;
-    text-align: center;
     margin: 10px;
 }
 
 /* --- SKILLS AND FORMATION ------------------------------------------------- */
 
-#skills-formation {
-    background-color: var(--dark-bgcolor);
-    color: var(--dark-fgcolor);
+#formation-skills {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    background-color: var(--dark-bgcolor);
+    color: var(--dark-fgcolor);
 }
 
-#formation, #skills {
+#formation,
+#skills {
     width: 33%;
     margin: 50px;
 }
 
-#skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#formation h2, #skills h2 {
+#formation h2,
+#skills h2 {
     font-family: "Lato Bold";
     border-bottom: 2px solid var(--dark-accentcolor);
     padding: 10px;
     text-align: center;
 }
 
-#formation .content-container {
+#formation .content-container,
+#tools .content-container,
+#languages .content-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-#formation .element {
+#formation .content-container {
+    flex-direction: column;
+}
+
+#formation .element,
+#skills img {
     text-align: center;
     margin: 10px;
 }
 
 #formation strong {
     font-family: "Lato Bold";
-}
-
-#tools, #languages {
-    width: 100%;
-}
-
-#tools .content-container, #languages .content-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px;
-    flex-wrap: wrap;
-}
-
-#skills img {
-    margin: 10px;
 }
 
 
@@ -205,6 +183,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--light-bgcolor);
+    color: var(--light-fgcolor);
 }
 
 footer i {
