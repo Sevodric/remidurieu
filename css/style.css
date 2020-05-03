@@ -109,7 +109,6 @@ a:hover {
   top: 0px;
   animation-name: arrow-scrolldown;
   animation-duration: 1.5s;
-  animation-delay: 1s;
   animation-iteration-count: infinite;
 }
 
