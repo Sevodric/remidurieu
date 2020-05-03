@@ -48,11 +48,10 @@ a:hover {
 h1,
 h2 {
   font-family: "Roboto Slab", serif;
-  font-size: 2em;
 }
 
 #title {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 #profile-picture {
@@ -206,6 +205,7 @@ h2 {
 
 #formation h2,
 #skills h2 {
+  font-size: 2em;
   font-family: "Roboto Slab", serif;
   border-bottom: 2px solid var(--accentcolor);
   padding: 10px;
