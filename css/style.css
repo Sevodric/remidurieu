@@ -130,7 +130,7 @@ a:hover {
   }
 
   #last-project,
-  #others-projects {
+  #other-projects {
     width: 80%;
   }
 
@@ -139,7 +139,7 @@ a:hover {
     margin-bottom: 25px;
   }
 
-  #others-projects {
+  #other-projects {
     margin-top: 25px;
     margin-bottom: 50px;
   }
@@ -153,7 +153,7 @@ a:hover {
   }
 
   #last-project,
-  #others-projects {
+  #other-projects {
     width: 33%;
     margin: 50px;
   }
@@ -167,7 +167,7 @@ a:hover {
 }
 
 #last-project .content-container,
-#others-projects .content-container {
+#other-projects .content-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -175,7 +175,7 @@ a:hover {
 }
 
 #last-project p,
-#others-projects .element {
+#other-projects .element {
   margin: 10px;
 }
 
