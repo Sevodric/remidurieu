@@ -6,24 +6,6 @@
   --light-fgcolor: #16161D;
 }
 
-@font-face {
-  font-family: "Lato Bold";
-  src: url("../webfonts/lato-bold-webfont.woff2") format("woff2"),
-  url("../webfonts/lato-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: "Lato Regular";
-  src: url("../webfonts/lato-regular-webfont.woff2") format("woff2"),
-  url("../webfonts/lato-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-
-}
-
 * {
   margin: 0;
 }
@@ -33,12 +15,11 @@ body {
   height: 100%;
 }
 
-p {
-  font-family: "Lato Regular";
+p, a {
+  font-family: "Lato", sans-serif;
 }
 
 a {
-  font-family: "Lato Regular";
   color: var(--accentcolor);
   text-decoration: none;
 }
@@ -50,6 +31,7 @@ a:hover {
 /* --- RESUME --------------------------------------------------------------- */
 
 #resume {
+  min-height: 650px;
   height: 100%;
   width: 100%;
   color: var(--dark-fgcolor);
@@ -60,15 +42,17 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 2em;
 }
 
 #title {
-  font-family: "Lato Bold";
-  font-size: 3em;
-}
-
-#subtitle {
-  text-align: center;
+  font-size: 4em;
 }
 
 #profile-picture {
@@ -108,7 +92,7 @@ a:hover {
   position: relative;
   top: 0px;
   animation-name: arrow-scrolldown;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 
@@ -158,7 +142,7 @@ a:hover {
 }
 
 #projects h2 {
-  font-family: "Lato Bold";
+  font-size: 2em;
   border-bottom: 2px solid var(--accentcolor);
   padding: 10px;
   text-align: center;
@@ -222,7 +206,7 @@ a:hover {
 
 #formation h2,
 #skills h2 {
-  font-family: "Lato Bold";
+  font-family: "Roboto Slab", serif;
   border-bottom: 2px solid var(--accentcolor);
   padding: 10px;
   text-align: center;
@@ -248,7 +232,11 @@ a:hover {
 }
 
 #formation strong {
-  font-family: "Lato Bold";
+  font-family: "Lato Bold", serif;
+}
+
+#tools {
+  margin-bottom: 50px;
 }
 
 /* --- FOOTER --------------------------------------------------------------- */
