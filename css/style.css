@@ -1,8 +1,7 @@
 :root {
   --dark-bgcolor: #16161D;
   --dark-fgcolor: #F0F0F0;
-  --dark-accentcolor: #FFAE6A;
-  --light-accentcolor: #EC7F44;
+  --accentcolor: #EC7F44;
   --light-bgcolor: #F0F0F0;
   --light-fgcolor: #16161D;
 }
@@ -40,7 +39,7 @@ p {
 
 a {
   font-family: "Lato Regular";
-  color: var(--light-accentcolor);
+  color: var(--accentcolor);
   text-decoration: none;
 }
 
@@ -89,7 +88,7 @@ a:hover {
 }
 
 #resume i:hover {
-  color: var(--dark-accentcolor);
+  color: var(--accentcolor);
 }
 
 @keyframes arrow-scrolldown {
@@ -161,7 +160,7 @@ a:hover {
 
 #projects h2 {
   font-family: "Lato Bold";
-  border-bottom: 2px solid var(--light-accentcolor);
+  border-bottom: 2px solid var(--accentcolor);
   padding: 10px;
   text-align: center;
 }
@@ -225,7 +224,7 @@ a:hover {
 #formation h2,
 #skills h2 {
   font-family: "Lato Bold";
-  border-bottom: 2px solid var(--dark-accentcolor);
+  border-bottom: 2px solid var(--accentcolor);
   padding: 10px;
   text-align: center;
 }
@@ -267,5 +266,5 @@ footer {
 }
 
 footer i {
-  color: var(--light-accentcolor);
+  color: var(--accentcolor);
 }
