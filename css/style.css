@@ -1,9 +1,14 @@
 :root {
-  --dark-bgcolor: #16161D;
+  --dark-bgcolor: #0F0F0F;
   --dark-fgcolor: #F0F0F0;
   --accentcolor: #EC7F44;
   --light-bgcolor: #F0F0F0;
-  --light-fgcolor: #16161D;
+  --light-fgcolor: #0F0F0F;
+}
+
+:not(.particles-js-canvas-el) {
+  position: relative;
+  z-index: 2;
 }
 
 * {
@@ -43,16 +48,10 @@ a:hover {
   text-align: center;
 }
 
-:not(.particles-js-canvas-el) {
-  z-index: 2;
-}
-
 .particles-js-canvas-el {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 h1,

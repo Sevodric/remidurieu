@@ -27,21 +27,21 @@
     },
     "opacity": {
       "value": 1,
-      "random": false,
+      "random": true,
       "anim": {
-        "enable": false,
+        "enable": true,
         "speed": 1,
-        "opacity_min": 0.1,
+        "opacity_min": 0.5,
         "sync": false
       }
     },
     "size": {
-      "value": 3,
+      "value": 15,
       "random": true,
       "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
+        "enable": true,
+        "speed": 10,
+        "size_min": 1,
         "sync": false
       }
     },
@@ -50,11 +50,11 @@
       "distance": 150,
       "color": "#EC7F44",
       "opacity": 1,
-      "width": 2
+      "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 3,
+      "speed": 1,
       "direction": "none",
       "random": false,
       "straight": false,
