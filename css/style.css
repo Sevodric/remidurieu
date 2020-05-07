@@ -35,7 +35,7 @@ a:hover {
   height: 100%;
   width: 100%;
   color: var(--dark-fgcolor);
-  background-image: url("../img/background.webp");
+  background-image: url("../img/background.png");
   background-size: cover;
   background-attachment: fixed;
   display: flex;
