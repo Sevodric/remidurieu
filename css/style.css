@@ -1,9 +1,14 @@
 :root {
-  --dark-bgcolor: #16161D;
+  --dark-bgcolor: #0F0F0F;
   --dark-fgcolor: #F0F0F0;
   --accentcolor: #EC7F44;
   --light-bgcolor: #F0F0F0;
-  --light-fgcolor: #16161D;
+  --light-fgcolor: #0F0F0F;
+}
+
+:not(.particles-js-canvas-el) {
+  position: relative;
+  z-index: 2;
 }
 
 * {
@@ -35,14 +40,18 @@ a:hover {
   height: 100%;
   width: 100%;
   color: var(--dark-fgcolor);
-  background-image: url("../img/background.png");
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: var(--dark-bgcolor);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 h1,
