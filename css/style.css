@@ -85,23 +85,22 @@ h2 {
 
 @keyframes arrow-scrolldown {
   from {
-    color: var(--dark-fgcolor);
+    opacity: 1;
     top: 0px;
   }
 
   to {
-    color: transparent;
+    opacity: 0.3;
     top: 15px;
   }
 }
 
 #arrow-down {
   color: var(--dark-fgcolor);
-  position: relative;
-  top: 0px;
   animation-name: arrow-scrolldown;
-  animation-duration: 1s;
+  animation-duration: 0.6s;
   animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 #arrow-down:hover {
