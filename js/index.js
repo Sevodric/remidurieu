@@ -10,7 +10,7 @@ particlesJS.load('resume', 'js/particles.json')
  */
 const arrow = document.getElementById('arrow-down')
 const target = document.getElementById('projects')
-arrow.addEventListener('click', function() {
+arrow.addEventListener('click', function () {
   target.scrollIntoView({
     behavior: 'smooth'
   })
